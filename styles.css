@@ -34,6 +34,7 @@ header {
     font-size: 1em;
     width: max(45%, 310px);
     margin-bottom: 3em;
+    transition: 1s ease;
 }
 
 header p:first-of-type {
