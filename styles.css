@@ -32,7 +32,7 @@ p {color: var(--GrayishBlue);}
 header {
     text-align: center;
     font-size: 1em;
-    width: 310px;
+    width: max(45%, 310px);
     margin-bottom: 3em;
 }
 
@@ -45,15 +45,27 @@ section {
     width: 320px;
     font-size: 0.9em;
     padding: 2em;
-    margin: 1.5em 0;
+    margin: 2em 0;
     border-radius: 6px;
     overflow: hidden;
     box-shadow: 0 20px 40px lightgray;
+    height: fit-content;
 }
 
 section > img {
     float: right;
     margin-top: 2em;
+}
+
+@media (min-width: 1024px) {
+    header {font-size: 1.4em;}
+
+    main {
+        display: flex;
+        align-items: center;
+    }
+
+    main .center {margin: 0 2em;}
 }
 
 .attribution { font-size: 11px; text-align: center; }
