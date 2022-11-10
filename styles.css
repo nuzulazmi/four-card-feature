@@ -10,5 +10,51 @@
     --VeryLightGray: hsl(0, 0%, 98%);
 }
 
+* {box-sizing: border-box;margin: 0;}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    font-size: 15px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1,h2 {color: var(--VeryDarkBlue);}
+
+h2 {margin: 0em 0 0.5em;}
+
+p {color: var(--GrayishBlue);}
+
+header {
+    text-align: center;
+    font-size: 1em;
+    width: 310px;
+    margin-bottom: 3em;
+}
+
+header p:first-of-type {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+section {
+    width: 320px;
+    font-size: 0.9em;
+    padding: 2em;
+    margin: 1.5em 0;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px lightgray;
+}
+
+section > img {
+    float: right;
+    margin-top: 2em;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
